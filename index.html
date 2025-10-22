@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Absen RT02</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Kehadiran Kandidat Persami RT02</h1>
+
+    <form id="absensiForm">
+      <input type="text" id="nama" placeholder="Nama Anak" required />
+      <input type="text" id="kelas" placeholder="Kelas" required />
+      <button type="submit">Tambah Kehadiran</button>
+    </form>
+
+    <h2>Daftar Kehadiran Hari Ini</h2>
+
+    <!-- Filter Tanggal -->
+    <div class="filter-tanggal">
+      <label for="filterTanggal">Filter Tanggal:</label>
+      <input type="date" id="filterTanggal" />
+      <button id="resetFilter">Reset Filter</button>
+    </div>
+
+    <table id="tabelKehadiran">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Waktu</th>
+          <th>Tanggal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data akan muncul di sini -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
